@@ -1,0 +1,530 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navbar  */
+
+
+nav {
+    padding: 30px 60px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav li {
+    list-style: none;
+    color: white;
+}
+
+.brand a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.containerNav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex: 1 0 300px;
+}
+
+#paddingToRight {
+    padding-left: 200px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.link {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 1rem;
+    height: 100%;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .container {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    #paddingToRight {
+        padding-left: 0;
+    }
+
+    .container.active {
+        left: 0;
+    }
+
+    .container li {
+        margin: 2.5rem 0;
+    }
+
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        margin-left: 200px;
+    }
+
+}
+
+
+.container a {
+    margin: 0px 30px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.container a:hover {
+    color: grey;
+}
+
+nav a {
+    width: 100%;
+}
+
+#register {
+    border: 3px solid transparent;
+    border-color: #007186;
+    padding: 16px 38px;
+    border-radius: 12px;
+    background-color: #51797B;
+    transition: 0.3s ease all;
+}
+
+#register:hover {
+    background-color: black;
+    transition: 0.4s;
+}
+
+body{
+    background-image: url("./../assets/NewsUpdate/Walpaper\ background.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.banner{
+    background-image: url("./../assets/eSportImages/image\ 3Banner\ E-sport.png");
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: red;
+    transition: 0.3s ease-out;
+}
+
+.option{
+    position: relative;
+    text-align: center;
+    margin: 50px auto 0px auto;
+}
+
+.schedule{
+    margin: auto 20px;
+    font-size: 24px;
+}
+
+.team-list{
+    margin: 50px auto 0px auto;
+    font-size: 24px;
+}
+
+/* Quarterfinal */
+
+.container1{
+    position: relative;
+    float: center;
+    width: 1300px;
+    height: 765px;
+    margin: 20px auto 50px auto;
+    border: 1px solid;
+    border-color: white;
+}
+
+.container1 .date{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+}
+
+.container1 .match{
+    position: relative;
+    width: 1250px;
+    height: 150px;
+    float: left;
+    margin: 10px 0px 10px 22px;
+    border: 1px solid;
+    border-color: white;
+    display: flex;
+}
+
+.match .stage{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.match .score-1{
+    position: relative;
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 320px;
+    margin-right: 20px;
+}
+
+.match .team-1{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    float: left;
+    background-image: url("./../assets/eSportImages/Team_chameleon.png");
+    background-size: cover;
+    margin: 17px 10px;
+}
+
+.match .vs{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.match .team-2{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    float: left;
+    background-image: url("./../assets/eSportImages/Team_crinsom_bull.png");
+    background-size: cover;
+    margin: 17px 10px;
+}
+
+.match .score-2{
+    position: relative;
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 290px;
+}
+
+.match .hour{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.match .team-3{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    float: left;
+    background-image: url("./../assets/eSportImages/Team_Oriental_chicken.png");
+    background-size: cover;
+    margin: 17px 10px;
+}
+
+.match .team-4{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    float: left;
+    background-image: url("./../assets/eSportImages/Team_Tailed_Beast_1.png");
+    background-size: cover;
+    margin: 17px 10px;
+}
+
+.match .team-5{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    float: left;
+    background-image: url("./../assets/eSportImages/Team_Rainbow_2.png");
+    background-size: cover;
+    margin: 17px 10px;
+}
+
+.match .team-6{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    float: left;
+    background-image: url("./../assets/eSportImages/Team_ballistic.jpg");
+    background-size: cover;
+    margin: 17px 10px;
+}
+
+.match .team-7{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    float: left;
+    background-image: url("./../assets/eSportImages/Team_Patriots_2.png");
+    background-size: cover;
+    margin: 17px 10px;
+}
+
+.match .team-8{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    float: left;
+    background-image: url("./../assets/eSportImages/Team_Leviathan(edited).png");
+    background-size: cover;
+    margin: 17px 10px;
+}
+
+/* Semifinal */
+
+.container-2{
+    position: relative;
+    float: center;
+    width: 1300px;
+    height: 420px;
+    margin: 20px auto 50px auto;
+    border: 1px solid;
+    border-color: white;
+}
+
+.container-2 .date{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+}
+
+.container-2 .match{
+    position: relative;
+    width: 1250px;
+    height: 150px;
+    float: left;
+    margin: 10px 0px 10px 22px;
+    border: 1px solid;
+    border-color: white;
+    display: flex;
+}
+
+/* Final */
+
+.container-3{
+    position: relative;
+    float: center;
+    width: 1300px;
+    height: 420px;
+    margin: 20px auto 50px auto;
+    border: 1px solid;
+    border-color: white;
+}
+
+.container-3 .date{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+}
+
+.container-3 .match{
+    position: relative;
+    width: 1250px;
+    height: 150px;
+    float: left;
+    margin: 10px 0px 10px 22px;
+    border: 1px solid;
+    border-color: white;
+    display: flex;
+}
+
+.match .team-9{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    float: left;
+    background-image: url("./../assets/eSportImages/Team_Tailed_Beast_1.png");
+    background-size: cover;
+    margin: 17px 10px 17px 300px;
+}
+
+.match .team-10{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    float: left;
+    background-image: url("./../assets/eSportImages/Team_ballistic.jpg");
+    background-size: cover;
+    margin: 17px 330px 17px 10px;
+}
+
+.match .team-11{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    float: left;
+    background-image: url("./../assets/eSportImages/Team_chameleon.png");
+    background-size: cover;
+    margin: 17px 10px 17px 420px;
+}
+
+.match .team-12{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    float: left;
+    background-image: url("./../assets/eSportImages/Team_Leviathan(edited).png");
+    background-size: cover;
+    margin: 17px 330px 17px 10px;
+}
+
+/* Footer */
+
+.footer{
+    background-color:rgb(83, 83, 83);
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contain{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-self: center;
+    padding-left: 150px;
+}
+
+.footer-section{
+    display: flex;
+}
+
+#logo-footer{
+    margin: 20px 100px 20px 20px;
+    background-color: rgb(5, 0, 66);
+    background-image: linear-gradient(to top, aqua 0%, rgb(1, 1, 104));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.footer-item{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+}
+
+.address h2{
+    color: rgba(255, 255, 255, 0.6);;
+}
+
+.address{
+    color: rgba(255, 255, 255, 0.6);;
+    margin-bottom: 1rem;
+}
+
+.contact h2{
+    color: rgba(255, 255, 255, 0.6);;
+}
+
+.contact{
+    color: rgba(255, 255, 255, 0.6);;
+    margin-bottom: 1rem;
+}
+
+.footer-link a{
+    margin: 0px 50px 0px 50px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.footer-link a:hover{
+    color: red;
+    transition: 0.3s ease-out;
+}
+
+.social-media h2{
+    color: rgba(255, 255, 255, 0.6);
+}
+.social-media a{
+    text-decoration: none;
+}

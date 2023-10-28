@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coda&family=Cormorant+SC:wght@300;400;500;700&family=Inter:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOKA 3</title>
+</head>
+<body>
+        <!-- Navbar -->
+        <nav>
+            <div class="containerNav">
+    
+                <div class="brand">
+                    <a href="index.html">Noka3</a>
+                </div>
+                <div class="nav-toggle" id="menu-mobile">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="container">
+                    <li><a class="link" href="./index.html">Home</a></li>
+                    <li><a class="link" href="index.html#heroPage">Heroes</a></li>
+                    <li><a class="link" href="Noka 3 News and Updates.html">News</a></li>
+                    <li><a class="link" href="./eSport/esport_team.html">ESport</a></li>
+                    <li><a class="link" id="paddingToRight" href="LogIn.html">LogIn</a></li>
+                    <li><a class="link" id="register" href="Register.html">Register</a></li>
+                </ul>
+        </nav>
+
+        <div class="Register-section">
+            <h1>Register</h1>
+            <!-- form -->
+            <form action="" onsubmit="return validateRegister()">
+                <!-- Email -->
+               <p>Email</p><input type="text" name="" id="txtEmail" placeholder="Insert Email">
+
+               <!-- birthday -->
+                <p>Birthday</p><input type="date" name="" id="Birthday" placeholder="Age must be 16 and above">
+
+                <!-- username -->
+                <p>Username</p><input type="text" name="" id="txtUsername" placeholder="10 Characters or less">
+
+                <!-- password -->
+                <p>Password</p><input type="password" name="" id="txtPassword" placeholder="5-15 Characters, starts with capital, special char">
+
+                <!-- confirm password -->
+                <p>Confirm Password</p><input type="password" name="" id="txtPassword2">
+
+                <!-- region -->
+                <p>Region</p>
+                <select name="" id="selectRegion">
+                    <option value="-1">[Choose your region]</option>
+                    <option value="South East Asia">South East Asia (SEA)</option>
+                    <option value="North America">North America (NA)</option>
+                </select>
+
+                <!-- terms and condition -->
+                <br>
+                <p>I agree to the terms and conditions that apply</p><input type="checkbox" name="" id="checkBox">
+                <br>
+                <input type="submit" value="Register">
+
+                <p id="error" style="color: red;"></p>
+            </form>
+        </div>
+
+               <!-- Footer -->
+
+   <div class = "footer">
+    <div class = "footer-contain">
+        <div class = "footer-section">
+            <div id="logo-footer">
+                Noka3
+            </div>
+        </div>
+        <div class = "footer-section">
+            <div class = "foooter-item">
+                <div class = "address">
+                    <h2>Address</h2>
+                    <br>
+                    420 San Antoine lane 
+                    <br>
+                    San Diego
+                    <br>
+                    Central Jakarta 88088
+                    <br>
+                    Indonesia 
+                </div>
+                <div class = "contact">
+                    <h2>Contact Us</h2>
+                    <br>
+                    Phone: (021) 696 9999 
+                    <br>
+                    Fax: (021) 969 6666
+                </div>
+            </div>
+        </div>
+        <div class = "footer-section">
+            <div class = "foooter-item">
+                <div class = "footer-link">
+                   
+                    <a href="Noka 3 News and Updates.html">News</a>
+                    <br>
+                    <br>
+                    <a href="./eSport/Noka_3_e-sport_schedule.html">E-sport</a>
+                    <br>
+                    <br>
+                    <a href="Register.html" class="register-footer">Register</a>
+                </div>
+            </div>
+        </div>
+        <div class = "footer-section">
+            <div class = "foooter-item">
+                <div class = social-media>
+                    <h2>Follow Us</h2>
+                    <br>
+                    <a href="https://www.instagram.com/noka_thethird/">
+                        <img src="./assets/NewsUpdate/Instagram-small logo.png" alt="no image avaiable">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100082537353428">
+                        <img src="./assets/NewsUpdate/Facebook-small icon.png" alt="no image avaiable">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <script src="script.js"></script>
+</footer>
+
+</html>
